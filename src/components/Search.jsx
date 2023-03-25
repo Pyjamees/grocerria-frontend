@@ -44,7 +44,7 @@ function Search(prop) {
     fetchTotalFatMaximum,
   ]) {
     const response = await axios.get(
-      `http://localhost:5000/products/${fetchSearchInput}&${fetchSortCategory}&${fetchSortOrder}&${fetchCarbohydrateMinimum}&${fetchCarbohydrateMaximum}&${fetchProteinMinimum}&${fetchProteinMaximum}&${fetchTotalFatMinimum}&${fetchTotalFatMaximum}`
+      `https://grocer-ria-api.onrender.com/products/${fetchSearchInput}&${fetchSortCategory}&${fetchSortOrder}&${fetchCarbohydrateMinimum}&${fetchCarbohydrateMaximum}&${fetchProteinMinimum}&${fetchProteinMaximum}&${fetchTotalFatMinimum}&${fetchTotalFatMaximum}`
     );
     setProduct(response.data);
     setSearchInput(fetchSearchInput);
