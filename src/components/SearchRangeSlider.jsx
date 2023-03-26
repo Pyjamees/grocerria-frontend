@@ -108,10 +108,10 @@ function SearchRangeSlider(prop) {
             style={{
               width: `calc((100% * ${
                 (carbohydrateMaximum - carbohydrateMinimum) / 100
-              } - 20px * ${
+              } - 16px * ${
                 (carbohydrateMaximum - carbohydrateMinimum) / 100
               }))`,
-              left: `calc(100% * ${carbohydrateMinimum / 100} - 20px * ${
+              left: `calc(100% * ${carbohydrateMinimum / 100} - 16px * ${
                 carbohydrateMinimum / 100
               } + 10px)`,
             }}
@@ -138,7 +138,7 @@ function SearchRangeSlider(prop) {
             onChange={updateSliderInput}
             onMouseUp={updateMacroRange}
           ></input>
-          <Container style={{ padding: "0", width: "calc(100% - 20px)" }}>
+          <Container style={{ padding: "0", width: "calc(100% - 16px)" }}>
             <div className="markerContainer">
               <div className="markerLong"></div>
               <div className="markerShort"></div>
@@ -169,8 +169,8 @@ function SearchRangeSlider(prop) {
             style={{
               width: `calc((100% * ${
                 (proteinMaximum - proteinMinimum) / 100
-              } - 20px * ${(proteinMaximum - proteinMinimum) / 100}))`,
-              left: `calc(100% * ${proteinMinimum / 100} - 20px * ${
+              } - 16px * ${(proteinMaximum - proteinMinimum) / 100}))`,
+              left: `calc(100% * ${proteinMinimum / 100} - 16px * ${
                 proteinMinimum / 100
               } + 10px)`,
             }}
@@ -197,7 +197,7 @@ function SearchRangeSlider(prop) {
             onChange={updateSliderInput}
             onMouseUp={updateMacroRange}
           ></input>
-          <Container style={{ padding: "0", width: "calc(100% - 20px)" }}>
+          <Container style={{ padding: "0", width: "calc(100% - 16px)" }}>
             <div className="markerContainer">
               <div className="markerLong"></div>
               <div className="markerShort"></div>
@@ -228,8 +228,8 @@ function SearchRangeSlider(prop) {
             style={{
               width: `calc((100% * ${
                 (totalFatMaximum - totalFatMinimum) / 100
-              } - 20px * ${(totalFatMaximum - totalFatMinimum) / 100}))`,
-              left: `calc(100% * ${totalFatMinimum / 100} - 20px * ${
+              } - 16px * ${(totalFatMaximum - totalFatMinimum) / 100}))`,
+              left: `calc(100% * ${totalFatMinimum / 100} - 16px * ${
                 totalFatMinimum / 100
               } + 10px)`,
             }}
@@ -257,7 +257,7 @@ function SearchRangeSlider(prop) {
             onMouseUp={updateMacroRange}
           ></input>
 
-          <Container style={{ padding: "0", width: "calc(100% - 20px)" }}>
+          <Container style={{ padding: "0", width: "calc(100% - 16px)" }}>
             <div className="markerContainer">
               <div className="markerLong"></div>
               <div className="markerShort"></div>

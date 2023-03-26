@@ -113,8 +113,8 @@ function ListItems(prop) {
               : "none",
         }}
       >
-        <h1 style={{ fontSize: "0.9rem" }}>Searching for products...</h1>
-        <h1 style={{ fontSize: "0.7rem" }}>
+        <h1 style={{ fontSize: "0.7rem" }}>Searching for products...</h1>
+        <h1 style={{ fontSize: "0.6rem" }}>
           {Math.ceil(Math.random() * 3) === 1
             ? "Arranging them on the shelf..."
             : Math.ceil(Math.random() * 3) === 2
@@ -133,10 +133,10 @@ function ListItems(prop) {
               : "none",
         }}
       >
-        <h1 style={{ fontSize: "0.9rem" }}>
+        <h1 style={{ fontSize: "0.7rem" }}>
           Sorry! We could not find any results
         </h1>
-        <h1 style={{ fontSize: "0.7rem" }}>Try widening your search filters</h1>
+        <h1 style={{ fontSize: "0.6rem" }}>Try widening your search filters</h1>
       </div>
     </React.Fragment>
   );

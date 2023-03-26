@@ -10,10 +10,15 @@ function ListHeading(prop) {
             prop.sortCategory === prop.heading
               ? prop.sortOrder === 1
                 ? "1"
-                : "0"
-              : "0",
+                : "0.2"
+              : "0.2",
           color:
-            prop.sortOrder === 1 ? "rgb(33, 177, 255)" : "rgb(255, 33, 140)",
+            prop.sortCategory === prop.heading
+              ? prop.sortOrder === 1
+                ? "rgb(33, 177, 255)"
+                : "rgb(100, 100, 100)"
+              : "rgb(100,100,100)",
+          fontSize: "0.6rem",
         }}
       ></i>
       <span
@@ -74,11 +79,16 @@ function ListHeading(prop) {
           opacity:
             prop.sortCategory === prop.heading
               ? prop.sortOrder === 1
-                ? "0"
+                ? "0.2"
                 : "1"
-              : "0",
+              : "0.2",
           color:
-            prop.sortOrder === 1 ? "rgb(33, 177, 255)" : "rgb(255, 33, 140)",
+            prop.sortCategory === prop.heading
+              ? prop.sortOrder === 1
+                ? "rgb(100, 100, 100)"
+                : "rgb(255, 33, 140)"
+              : "rgb(100,100,100)",
+          fontSize: "0.6rem",
         }}
       ></i>
     </div>

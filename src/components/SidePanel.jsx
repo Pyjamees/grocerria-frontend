@@ -23,14 +23,14 @@ function SidePanel(prop) {
       <div
         className="savedItemsCountDiv"
         style={{
-          right: isOpen ? "385px" : "35px",
+          right: isOpen ? "382px" : "32px",
           transition: "right 0.2s ease-in-out",
         }}
       ></div>
       <div
         className="savedItemsCountSpan"
         style={{
-          right: isOpen ? "385px" : "35px",
+          right: isOpen ? "382px" : "32px",
           transition: "right 0.2s ease-in-out",
         }}
       >

@@ -12,17 +12,17 @@ function Navigation() {
     <div className="navigationDiv">
       <Navbar
         bg="navigationNavbar"
-        style={{ padding: "0px auto", height: "40px" }}
+        style={{ padding: "0px auto", height: "30px" }}
       >
-        <Container>
+        <Container style={{ width: "80%", height: "30px" }}>
           <Navbar.Brand href="/">
             <img
               alt=""
               src={GrocerriaIcon}
-              width="18"
-              height="18"
+              width="15"
+              height="15"
               className="d-inline-block align-centre"
-              style={{ marginBottom: "2px", marginRight: "2px" }}
+              style={{ marginBottom: "2px", marginRight: "1px" }}
             />
             <Heading />
           </Navbar.Brand>
@@ -30,7 +30,12 @@ function Navigation() {
             <div>
               <Nav.Link
                 href="/"
-                style={{ paddingTop: "14px", paddingBottom: "5px" }}
+                style={{
+                  height: "24px",
+                  marginTop: "4px",
+                  marginBottom: "0px",
+                  fontSize: "0.6rem",
+                }}
               >
                 Search
               </Nav.Link>
@@ -44,7 +49,12 @@ function Navigation() {
             <div>
               <Nav.Link
                 href="/about"
-                style={{ paddingTop: "14px", paddingBottom: "5px" }}
+                style={{
+                  height: "24px",
+                  marginTop: "4px",
+                  marginBottom: "0px",
+                  fontSize: "0.6rem",
+                }}
               >
                 About
               </Nav.Link>

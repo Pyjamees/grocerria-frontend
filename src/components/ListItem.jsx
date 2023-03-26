@@ -72,11 +72,11 @@ function ListItem(prop) {
             prop.totalFat
         )
           ? prop.index % 3 === 0
-            ? "inset 0 0 0 0.3rem #21b1ff"
+            ? "inset 0 0 0 2px #21b1ff"
             : prop.index % 3 === 1
-            ? "inset 0 0 0 0.3rem #ff218c"
+            ? "inset 0 0 0 2px #ff218c"
             : prop.index % 3 === 2
-            ? "inset 0 0 0 0.3rem #FFD800"
+            ? "inset 0 0 0 2px #FFD800"
             : ""
           : "",
       }}

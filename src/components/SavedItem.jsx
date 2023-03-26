@@ -32,13 +32,13 @@ function SavedItem(prop) {
         >
           <h1
             style={{
-              fontSize: "0.9rem",
-              margin: "15px auto 5px",
+              fontSize: "0.7rem",
+              margin: "20px auto 5px",
             }}
           >
             No Items Saved
           </h1>
-          <h1 style={{ fontSize: "0.7rem", margin: "auto" }}>
+          <h1 style={{ fontSize: "0.6rem", margin: "auto" }}>
             Click on a product to save it
           </h1>
         </div>

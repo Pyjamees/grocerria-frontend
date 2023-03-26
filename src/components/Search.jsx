@@ -44,7 +44,7 @@ function Search(prop) {
     fetchTotalFatMaximum,
   ]) {
     const response = await axios.get(
-      `https://grocer-ria-api.onrender.com/products/${fetchSearchInput}&${fetchSortCategory}&${fetchSortOrder}&${fetchCarbohydrateMinimum}&${fetchCarbohydrateMaximum}&${fetchProteinMinimum}&${fetchProteinMaximum}&${fetchTotalFatMinimum}&${fetchTotalFatMaximum}`
+      `http://localhost:5000/products/${fetchSearchInput}&${fetchSortCategory}&${fetchSortOrder}&${fetchCarbohydrateMinimum}&${fetchCarbohydrateMaximum}&${fetchProteinMinimum}&${fetchProteinMaximum}&${fetchTotalFatMinimum}&${fetchTotalFatMaximum}`
     );
     setProduct(response.data);
     setSearchInput(fetchSearchInput);
@@ -55,7 +55,7 @@ function Search(prop) {
     setSortCategory("");
     searchTimeout = setTimeout(() => {
       fetchData([input.target.value, "", 1, ...macroRangeArray]);
-    }, 750);
+    }, 500);
   }
 
   function saveItemArray(savedItemArray) {

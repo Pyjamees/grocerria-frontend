@@ -6,14 +6,14 @@
 
 .body{
     display: flex;
-    margin-top: 40px;
+    margin-top: 32px;
 }
 
 .updateContainer{
     position: fixed;
-    top: 40px;
+    top: 30px;
     width: 100%;
-    height: 20px;
+    height: 14px;
     background-color: #FDEA73;
     z-index: 10;
 }
@@ -22,6 +22,7 @@
     display: table;
     margin: 2px auto;
     color: rgba(0,0,0,0.55);
+    font-size: 0.5rem;
 }
 
 .navigationDiv{
@@ -40,7 +41,7 @@
 
 .navigationIndicator{
     width: 40px;
-    height: 4px;
+    height: 2px;
     margin: 0px auto;
 }
 
@@ -55,11 +56,12 @@
 } */
 
 .headingSpan {
-    padding: 0 0.25vw;
-    font-size: 0.9rem;
+    margin: 5px 5px 5px 2px;
+    /* padding-bottom: 10px; */
+    font-size: 0.7rem;
     font-family: 'Titan One', cursive;
     font-weight: 1200;
-    letter-spacing: 1px;
+    letter-spacing: 0.75px;
 }
 
 .titlePageDiv{
@@ -95,7 +97,7 @@
 }
 
 .searchContainer{
-    margin: 40px 0 0;
+    margin: 35px 0 0;
     display: flex;
     justify-content: center;
     position: relative;
@@ -104,16 +106,17 @@
 
 .searchForm{
     width: 50%;
-    height: 45px;
+    height: 36px;
 }
 
 .searchInput{
+    font-size: 0.6rem;
     width: 100%;
     border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: solid 1.5px rgba(222, 226, 230, 0.9);
-    box-shadow: 0 0 3px rgba(222, 226, 230, 0.9);
+    padding-left: 15px;
+    padding-right: 15px;
+    border: solid 1px rgba(222, 226, 230, 0.9);
+    box-shadow: 0 0 3px rgba(222, 226, 230, 0.5);
     caret-color: rgba(0, 0, 0, 0.55);
 }
 
@@ -122,12 +125,12 @@
 }
 
 .searchInput:hover{
-    box-shadow: 0 0 12px rgba(222, 226, 230, 1);
+    box-shadow: 0 0 10px rgba(222, 226, 230, 0.5);
 }
 
 .searchInput::placeholder{
     padding-left: 2px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
@@ -141,14 +144,14 @@
 
 .searchItemsCountContainer {
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     color:rgba(0, 0, 0, 0.55);
 }
 
 .listHeaderStickyContainer{
     position: sticky;
-    top: 55px;
-    padding: 10px 0 0 0;
+    top: 45px;
+    padding: 8px 0 0 0;
     z-index: 3;
     background-color: white;
 }
@@ -162,7 +165,7 @@
 
 .listHeaderContainer{
     margin: 0;
-    padding: 7.5px 0;
+    padding: 5px 0;
     text-align: center;
     background-color: white;
     box-shadow: 0 0 3px rgba(222, 226, 230, 0.9);
@@ -179,8 +182,8 @@
 }
 
 .listItemContainer{
-    margin: 12px 0;
-    padding: 20px 0;
+    margin: 5px 0;
+    padding: 0px 0;
     box-shadow: inset 0 0 0 0 #FFFFFF, 0 0 3px rgba(222, 226, 230, 0.9);
     transition: 0.6s;
     position: relative;
@@ -188,20 +191,19 @@
 }
 
 .listItemBox:nth-child(3n-1) .listItemContainer:hover{
-    box-shadow: inset 0 0 0px 0.15rem #21b1ff, 0 0 12px rgba(222, 226, 230, 1);
+    box-shadow: inset 0 0 0px 1px #21b1ff, 0 0 12px rgba(222, 226, 230, 1);
 }
 
 .listItemBox:nth-child(3n) .listItemContainer:hover{
-    box-shadow: inset 0 0 0px 0.15rem #ff218c, 0 0 12px rgba(222, 226, 230, 1);
+    box-shadow: inset 0 0 0px 1px #ff218c, 0 0 12px rgba(222, 226, 230, 1);
 }
 
 .listItemBox:nth-child(3n+1) .listItemContainer:hover{
-    box-shadow: inset 0 0 0px 0.15rem #ffd800, 0 0 12px rgba(222, 226, 230, 1);
+    box-shadow: inset 0 0 0px 1px #ffd800, 0 0 12px rgba(222, 226, 230, 1);
 }
 
 .listHeadingsContainer{
     margin: 0;
-    font-weight: 700;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -216,12 +218,15 @@
 .listHeadingSpan{
     cursor: pointer;
     user-select: none;
+    font-size: 0.6rem;
+    font-weight: 700;
 }
 
 .listUnitSpan{
     color:rgba(0, 0, 0, 0.55);
     cursor: pointer;
     user-select: none;
+    font-size: 0.6rem;
 }
 
 .listUnitsContainer{
@@ -233,7 +238,7 @@
 
 .listItemNutritionContainer{
     margin: 2.5px 0 2.5px;
-    padding: 30px 0 0 0;
+    padding: 25px 0 0 0;
     font-size: 0.6rem;
     display: flex;
     justify-content: space-between;
@@ -246,7 +251,7 @@
 .listItemHeaderButton{
     color: #ff218c;
     /* color: rgba(214, 24, 32, 0.8); */
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-weight: 700;
     border: 1px solid #ff218c;
     /* border: 1px solid rgba(214, 24, 32, 0.7); */
@@ -258,6 +263,7 @@
     box-shadow: 0 0 1px  #ff218c,  inset 0 0 0 0 #ff218c;
     /* box-shadow: 0 0 1px  rgba(214, 24, 32, 0.7),  inset 0 0 0 0 rgba(214, 24, 32, 0.8); */
     transition: 0.3s;
+    margin-top: 0px;
 }
 
 .listItemHeaderButton:hover{
@@ -279,7 +285,7 @@
 }
 
 .listItemsA{
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     vertical-align: text-top;
     color: rgba(0, 0, 0, 1);
     font-weight: 700;
@@ -301,13 +307,13 @@
 
 .listItemPrice{
     position: absolute;
-    top: 12px;
+    top: 2px;
     right: 7%;
     align-items: center;
     margin: 15px auto;
 
     color: #000000;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-weight: 700;
     border: 1px solid #ffd800;
     border-radius: 5px;
@@ -321,7 +327,7 @@
 .listItemsNoProducts{
     color: rgba(0, 0, 0, 0.55);
     text-align: center;
-    margin: 50px auto calc(100vh - 464px);
+    margin: 50px auto calc(100vh - 401px);
     width:fit-content;
     vertical-align: middle;
 }
@@ -338,13 +344,13 @@
 
 .listPageNavigationButton{
     color:  rgba(0, 0, 0, 1);
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 700;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     background-color: #FFFFFF;
     width: 65px;
-    height: 55px;
+    height: 45px;
     text-align: middle;
     margin: auto 5px;
     box-shadow: 0 0 3px rgba(222, 226, 230, 0.9);
@@ -356,14 +362,14 @@
 
 .listPageNavigationCurrentButton{
     color: #FFFFFF;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 700;
     border: 1px solid #ff218c;
     box-shadow: 0 0 3px #ff218c;
     border-radius: 5px;
     background-color: #ff218c;
     width: 65px;
-    height: 55px;
+    height: 50px;
     text-align: middle;
     margin: auto 5px;
 }
@@ -371,7 +377,7 @@
 /*Slider CSS*/
 
 .rangeSliderSection{
-    margin: 15px auto 15px;
+    margin: 10px auto 8px;
 }
 
 .rangeSliderContainer{
@@ -382,10 +388,10 @@
 
 .rangeSliderHeadings{
     display: flex;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 700;
     color:rgba(0, 0, 0, 0.55);
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     justify-content: space-between;
 }
 
@@ -407,7 +413,7 @@
     overflow: hidden;
 
     outline: none;
-    height: 16px;
+    height: 10px;
     margin: 0;
     padding: 0;
 
@@ -420,8 +426,8 @@
     pointer-events: all;
     position: relative;
     z-index: 5;
-    width: 20px;
-    height: 16px;
+    width: 16px;
+    height: 10px;
     border-radius: 4px;
     overflow: visible;
 }
@@ -447,7 +453,7 @@
 }
 
 .markerContainer{
-    margin: 18px auto 0;
+    margin: 12px auto 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -470,7 +476,7 @@
 
 .markerLong{
     width: 1px;
-    height: 4px;
+    height: 3px;
     background-color: rgba(0,0,0,0.15);
     text-align: center;
 }
@@ -478,7 +484,7 @@
 .markerNumber{
     color: rgba(0,0,0,0.55);
     text-align: center;  
-    font-size: 0.6rem; 
+    font-size: 0.5rem; 
 }
 
   
@@ -492,9 +498,9 @@
   .includeRangeCarbohydrate,
   .includeRangeProtein,
   .includeRangeTotalFat {
-    height: 15px;
+    height: 9px;
     position: absolute;
-    top: 1px;
+    top: 0.5px;
     opacity: 0.75;
     z-index: 0;
   }
@@ -513,7 +519,7 @@
   
   .fullRange {
     width: 100%;
-    height: 16px;
+    height: 10px;
     border: 1px solid rgb(222, 226, 230);
     position: absolute;
     border-radius: 5px;
@@ -531,7 +537,7 @@
     align-items: stretch;
     justify-content: flex-start;
     margin: 0px auto 15px;
-    height: 14px;
+    height: 10px;
   }
   
 .barContainer .bar {
@@ -539,10 +545,10 @@
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    padding: 5px;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     animation: bar-load 0.6s ease-in-out;
     transform-origin: 0 50%;
+    padding: 0 10px 0 10px;
   }
 
 .val-a {
@@ -571,26 +577,26 @@
     position: fixed;
     z-index: 2;
     right: 0;
-    top: 70px;
+    top: 60px;
     background-color: #21b1ff;
     border: none;
     border-radius: 10px 0 0 10px;
     color: white;
     padding: 12px 14px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .sidePanelList{
     border-left: 4px solid #21b1ff;
     z-index: 1;
     width: 100%;
-    background-color: #0FFFFF;
+    background-color: #FFFFFF;
     box-shadow: 0 0 10px rgba(222, 226, 230, 1);
 
     overflow: auto;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 44px);
     position: sticky;
-    top: 60px;
+    top: 44px;
 }
 
 .savedItemListHeading{
@@ -609,7 +615,7 @@
 
 .savedItemName{
     margin: 0 auto 10px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -620,7 +626,7 @@
 
 .savedItemMacro{
     display: flex;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
 }
 
 /* .savedItemNameDiv{
@@ -631,7 +637,7 @@
 .savedItemsCountDiv{
     position: fixed;
     z-index: 2;
-    top: 105px;
+    top: 92px;
     width: 20px;
     height: 20px;
     border-radius: 10px;
@@ -644,10 +650,9 @@
     z-index: 3;
     width: 20px;
     height: 20px;
-    right: 35px;
-    top: 108px;
+    top: 95px;
     color: #FFFFFF;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     text-align: center;
 }
 
@@ -663,6 +668,7 @@
     padding-top: 20px;
     text-align: center;
     margin-bottom: 10px;
+    font-size: 0.6rem;
 }
 
 
@@ -702,17 +708,17 @@
 @keyframes blueLeftLoad{
     0% {
         transform: translateX(-5vw);
-        box-shadow: inset 0 0 0px 0.3rem #21b1ff;
+        box-shadow: inset 0 0 0px 2px #21b1ff;
         opacity: 0;
     }
 
     90% {
-        box-shadow: inset 0 0 0px 0.3rem #21b1ff
+        box-shadow: inset 0 0 0px 2px #21b1ff
     }
 
     100% {
         transform: translateX(0vw);
-        box-shadow: inset 0 0 0px 0.3rem #21b1ff;
+        box-shadow: inset 0 0 0px 0px #21b1ff;
         opacity: 1;
     }
 }
@@ -720,17 +726,17 @@
 @keyframes blueRightLoad{
     0% {
         transform: translateX(+5vw);
-        box-shadow: inset 0 0 0px 0.3rem #21b1ff;
+        box-shadow: inset 0 0 0px 2px #21b1ff;
         opacity: 0;
     }
 
     90% {
-        box-shadow: inset 0 0 0px 0.3rem #21b1ff
+        box-shadow: inset 0 0 0px 2px #21b1ff
     }
 
     100% {
         transform: translateX(0vw);
-        box-shadow: inset 0 0 0px 0.3rem #21b1ff;
+        box-shadow: inset 0 0 0px 0px #21b1ff;
         opacity: 1;
     }
 }
@@ -738,17 +744,17 @@
 @keyframes redLeftLoad{
     0% {
         transform: translateX(-5vw);
-        box-shadow: inset 0 0 0px 0.3rem #ff218c;
+        box-shadow: inset 0 0 0px 2px #ff218c;
         opacity: 0;
     }
 
     90% {
-        box-shadow: inset 0 0 0px 0.3rem #ff218c
+        box-shadow: inset 0 0 0px 2px #ff218c
     }
 
     100% {
         transform: translateX(0vw);
-        box-shadow: inset 0 0 0px 0.3rem #ff218c;
+        box-shadow: inset 0 0 0px 0px #ff218c;
         opacity: 1;
     }
 }
@@ -756,17 +762,17 @@
 @keyframes redRightLoad{
     0% {
         transform: translateX(+5vw);
-        box-shadow: inset 0 0 0px 0.3rem #ff218c;
+        box-shadow: inset 0 0 0px 2px #ff218c;
         opacity: 0;
     }
 
     90% {
-        box-shadow: inset 0 0 0px 0.3rem #ff218c
+        box-shadow: inset 0 0 0px 2px #ff218c
     }
 
     100% {
         transform: translateX(0vw);
-        box-shadow: inset 0 0 0px 0.3rem #ff218c;
+        box-shadow: inset 0 0 0px 0px #ff218c;
         opacity: 1;
     }
 }
@@ -774,17 +780,17 @@
 @keyframes yellowLeftLoad{
     0% {
         transform: translateX(-5vw);
-        box-shadow: inset 0 0 0px 0.3rem #ffd800;
+        box-shadow: inset 0 0 0px 2px #ffd800;
         opacity: 0;
     }
 
     90% {
-        box-shadow: inset 0 0 0px 0.3rem #ffd800
+        box-shadow: inset 0 0 0px 2px #ffd800
     }
 
     100% {
         transform: translateX(0vw);
-        box-shadow: inset 0 0 0px 0.3rem #ffd800;
+        box-shadow: inset 0 0 0px 0px #ffd800;
         opacity: 1;
     }
 }
@@ -792,17 +798,17 @@
 @keyframes yellowRightLoad{
     0% {
         transform: translateX(+5vw);
-        box-shadow: inset 0 0 0px 0.3rem #ffd800;
+        box-shadow: inset 0 0 0px 2px #ffd800;
         opacity: 0;
     }
 
     90% {
-        box-shadow: inset 0 0 0px 0.3rem #ffd800
+        box-shadow: inset 0 0 0px 2px #ffd800
     }
 
     100% {
         transform: translateX(0vw);
-        box-shadow: inset 0 0 0px 0.3rem #ffd800;
+        box-shadow: inset 0 0 0px 0px #ffd800;
         opacity: 1;
     }
 }
@@ -882,7 +888,7 @@
 }
 
 .aboutTextParagraph{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 20px auto;
     color:rgba(0, 0, 0, 0.55)
 }

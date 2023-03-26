@@ -17,7 +17,7 @@ function ListItemHeader(prop) {
         className="listItemHeaderContainer"
         style={{
           position: "absolute",
-          top: "10px",
+          top: "0px",
           left: "7%",
           width: "fit-content",
           display: "flex",
@@ -30,7 +30,7 @@ function ListItemHeader(prop) {
           ],
         }}
       >
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" style={{ marginTop: "0" }}>
           <button type="submit" className="listItemHeaderButton">
             Go to Coles
           </button>
