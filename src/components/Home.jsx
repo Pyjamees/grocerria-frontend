@@ -35,10 +35,10 @@ function Home() {
             <Search saveItemArray={saveItemArray} />
           </SavedItemArrayContext.Provider>
         </Container>
-        <SidePanel
+        {/* <SidePanel
           savedItemArray={savedItemArray}
           savedItemsCount={savedItemsCount}
-        />
+        /> */}
       </div>
     </div>
   );
