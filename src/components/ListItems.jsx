@@ -12,7 +12,7 @@ function ListItems(prop) {
   useEffect(() => {
     setTimeout(function () {
       setFirstLoad(false);
-    }, 3000);
+    }, 5000);
   }, []);
 
   const searchInput = useContext(SearchInputContext);
