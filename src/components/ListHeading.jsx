@@ -16,8 +16,8 @@ function ListHeading(prop) {
             prop.sortCategory === prop.heading
               ? prop.sortOrder === 1
                 ? "rgb(33, 177, 255)"
-                : "rgb(100, 100, 100)"
-              : "rgb(100,100,100)",
+                : "rgb(150, 150, 150)"
+              : "rgb(150,150,150)",
           fontSize: "0.6rem",
         }}
       ></i>
@@ -85,9 +85,9 @@ function ListHeading(prop) {
           color:
             prop.sortCategory === prop.heading
               ? prop.sortOrder === 1
-                ? "rgb(100, 100, 100)"
+                ? "rgb(150, 150, 150)"
                 : "rgb(255, 33, 140)"
-              : "rgb(100,100,100)",
+              : "rgb(150,150,150)",
           fontSize: "0.6rem",
         }}
       ></i>

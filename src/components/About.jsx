@@ -7,7 +7,7 @@ function About() {
   return (
     <React.Fragment>
       <div className="body">
-        <Container className="aboutContainer" style={{ width: "55%" }}>
+        <Container className="aboutContainer" style={{ width: "60%" }}>
           <img
             alt=""
             src={Profile}
@@ -49,7 +49,7 @@ function About() {
             </p>
             <p
               className="aboutTextParagraph"
-              style={{ textAlign: "right", paddingRight: "5%" }}
+              style={{ textAlign: "right", paddingRight: "60%" }}
             >
               - James W.
             </p>

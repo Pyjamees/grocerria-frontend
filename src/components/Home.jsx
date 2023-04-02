@@ -30,7 +30,7 @@ function Home() {
         <span className="updateSpan">Last Update: Tuesday, 21 March 2023</span>
       </div>
       <div className="body">
-        <Container style={{ width: "55%" }}>
+        <Container style={{ width: "60%" }}>
           <SavedItemArrayContext.Provider value={savedItemArray}>
             <Search saveItemArray={saveItemArray} />
           </SavedItemArrayContext.Provider>

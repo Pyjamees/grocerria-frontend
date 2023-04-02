@@ -44,7 +44,7 @@ function Search(prop) {
     fetchTotalFatMaximum,
   ]) {
     const response = await axios.get(
-      `https://grocerria-api.onrender.com/products/${fetchSearchInput}&${fetchSortCategory}&${fetchSortOrder}&${fetchCarbohydrateMinimum}&${fetchCarbohydrateMaximum}&${fetchProteinMinimum}&${fetchProteinMaximum}&${fetchTotalFatMinimum}&${fetchTotalFatMaximum}`
+      `http://localhost:5000/products/${fetchSearchInput}&${fetchSortCategory}&${fetchSortOrder}&${fetchCarbohydrateMinimum}&${fetchCarbohydrateMaximum}&${fetchProteinMinimum}&${fetchProteinMaximum}&${fetchTotalFatMinimum}&${fetchTotalFatMaximum}`
     );
     setProduct(response.data);
     setSearchInput(fetchSearchInput);

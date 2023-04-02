@@ -78,6 +78,7 @@ function ListItems(prop) {
             name={product.name}
             id={product.id}
             price={product.price}
+            priceSaving={product.priceSaving}
             index={index}
           />
           <ListItem
@@ -91,6 +92,9 @@ function ListItems(prop) {
             percentageCarbohydrate={product.percentageCarbohydrate}
             percentageProtein={product.percentageProtein}
             percentageTotalFat={product.percentageTotalFat}
+            price={product.price}
+            priceSaving={product.priceSaving}
+            pricePerQuantity={product.pricePerQuantity}
             saveItem={saveItem}
             index={index}
           />

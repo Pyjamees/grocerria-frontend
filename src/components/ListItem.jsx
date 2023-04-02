@@ -88,6 +88,7 @@ function ListItem(prop) {
         carbohydrate={prop.carbohydrate}
         protein={prop.protein}
         totalFat={prop.totalFat}
+        pricePerQuantity={prop.pricePerQuantity}
       />
       <ListItemGraph
         key={prop.id + "LIG"}

@@ -8,7 +8,17 @@ function ListItemHeader(prop) {
   const load =
     prop.index % 2 === 0 ? "leftLoad" : prop.index % 2 === 1 ? "rightLoad" : "";
 
-  const formattedPrice = prop.price.replace("per", "/");
+  let price = convertTo2DP(prop.price);
+  let priceSaving = "-";
+  if (prop.priceSaving != "-" && prop.priceSaving) {
+    console.log(prop.priceSaving);
+    priceSaving = (prop.priceSaving / (prop.priceSaving + prop.price)) * 20;
+    priceSaving = Math.round(priceSaving) * 5;
+  }
+
+  function convertTo2DP(number) {
+    return Number.parseFloat(number).toFixed(2);
+  }
 
   return (
     <React.Fragment>
@@ -49,7 +59,23 @@ function ListItemHeader(prop) {
             ],
           }}
         >
-          {formattedPrice}
+          <div
+            className="listItemFullPrice"
+            style={{
+              width: priceSaving == "-" ? "75px" : "40px",
+              paddingLeft: priceSaving == "-" ? "0" : "5px",
+              borderRadius: priceSaving == "-" ? "5px" : "5px 0 0 5px",
+            }}
+          >
+            ${price}
+          </div>
+          {priceSaving == "-" ? (
+            <div></div>
+          ) : (
+            <div className="listItemPriceSaving">
+              <div>{priceSaving}% off</div>
+            </div>
+          )}
         </div>
       </Container>
     </React.Fragment>

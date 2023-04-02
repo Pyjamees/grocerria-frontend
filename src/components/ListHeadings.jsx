@@ -74,6 +74,14 @@ function ListHeadings(prop) {
         sortOrder={sortOrder}
         toggleSortCategory={toggleSortCategory}
       />
+      <ListHeading
+        key={"price" + sortCategory + sortOrder}
+        heading="Price"
+        unit="$/100g"
+        sortCategory={sortCategory}
+        sortOrder={sortOrder}
+        toggleSortCategory={toggleSortCategory}
+      />
     </Container>
   );
 }
