@@ -27,7 +27,7 @@ function Home() {
     <div className="document">
       {/* <div className="navigationUnderline"></div> */}
       <div className="updateContainer">
-        <span className="updateSpan">Last Update: Tuesday, 21 March 2023</span>
+        <span className="updateSpan">Last Update: Sunday, 2 April 2023</span>
       </div>
       <div className="body">
         <Container style={{ width: "60%" }}>
